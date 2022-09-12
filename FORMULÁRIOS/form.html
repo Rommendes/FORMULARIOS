@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de formulário</title>
+</head>
+<body>
+    <h1>Teste de formulário</h1>
+    <form autocomplete="on" action="cadastro.php" method="post"><!--method protege os dados. get deixa visível na barra de navegação. post tb não é totalmente seguro...é necessprio ser pictografado-->
+        <p>
+            <label for="iusuario">Usuário</label>
+            <input type="text" name="usuario" id="iusuario" required minlength="5" maxlength="20" size="15" placeholder="Nome do usuário" autocomplete="username"><!--requerid manda preencher / placeholder => aparece, preenche a caixa / -->
+            <p>
+                <label for="isenha" >Senha
+                </label>
+                <input type="password" name="senha" id="isenha" required minlength="8" maxlength="15" size="17" placeholder="min 8 digítos" autocomplete="current-password"> <!--size =>Tamanho da caixa, qtas letras vai mostrar-->
+            </p>
+            <p>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
+
+            </p>
+        </p>
+    </form>
+</html>
