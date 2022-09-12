@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de formulário</title>
+</head>
+<body>
+    <h1>Opções</h1>
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <fieldset>
+            <legend>Sexo</legend>
+            <input type="radio" name="sexo" id="isexmasc" value="M">
+            <label for="isexmasc">Masculino</label>
+            <input type="radio" name="sexo" id="isexfem" checked value="F">
+            <label for="isexfem">Feminino</label>
+            <!--PARA NÃO MARCAR A MESMO OPÇAO NO TYPE RADIO USA-SE O MESMO NAME NAS OPÇÕES ===>> NÃO SERVE PARA CHECKBOX ==> se colocar checked a opção vai ficar marcada e o usuário poderá desmarcar-->
+        </fieldset>
+        <fieldset>
+            <legend>Esportes favoritos</legend>
+            <input type="checkbox" name="futebol" id="ifutebol" checked> <label for="ifutebol">Futebol <br></label>
+            <input type="checkbox" name="volei" id="ivolei" checked> <label for="ivolei">Voleibol <br></label>
+            <input type="checkbox" name="basquete" id="ibasquete"> <label for="ibasquete">Basquetebol <br></label>
+            <input type="checkbox" name="andebol" id="iandebol"> <label for="iandebol">Andebol <br></label>
+            <input type="checkbox" name="corrida" id="icorrida"> <label for="icorrida">Corrida <br></label>
+            <input type="checkbox" name="natacao" id="inatacao"> <label for="inatacao">Natação <br></label>
+        </fieldset>
+    <p>
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpar">
+    </p>
+    </form>
+</body>
+</html>
